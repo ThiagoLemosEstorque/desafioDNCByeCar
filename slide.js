@@ -21,7 +21,7 @@ function trocarModal() {
   
   clearInterval(timer)
 
-  if (estiloModal == false) {
+  if (!estiloModal) {
     modais[slideAtual].classList.add('card-escondido');
     timer = setInterval(() => {carousel(+ 1);}, 5000);
   } else {
