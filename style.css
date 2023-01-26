@@ -1,0 +1,178 @@
+:root {
+    --preto-principal: #303030;
+    --branco-principal: #FFFFFF;
+    --azul-principal: #265E70;
+    --azul-secundario: #4DBCE9;
+    --azul-terciario: #4DBCE9;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--preto-principal);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 10% auto;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+header h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    color: var(--branco-principal);
+}
+
+.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    color: var(--azul-principal);
+    font-size: 2rem;
+}
+
+main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% auto;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.imagens {
+    align-items: center;
+    margin: 1.3rem;
+}
+
+span {
+    color: var(--azul-terciario);
+    font-weight: 700;
+}
+
+.card-setas {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--azul-terciario);
+    padding: 1.3rem;
+    margin: 1.3rem;
+    border-radius: 0.8rem;
+
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--branco-principal);
+}
+
+.card-escondido {
+    display: none;
+}
+
+.card h3,
+.modal h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.3rem;
+}
+
+.modal p {
+    font-size: 1rem;
+}
+
+.card h6 {
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+#preco,
+.modal-button {
+    color: var(--azul-principal);
+    font-weight: 700;
+    background-color: var(--branco-principal);
+    border-radius: 0.5rem;
+    border-style: none;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+.modal-button {
+    cursor: pointer;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    margin: 1.3rem auto 1.3rem auto;
+}
+
+.botao {
+    border-style: none;
+    border-radius: 0.5rem;
+    background-color: var(--azul-terciario);
+    padding: 0.6rem;
+    width: 40%;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+
+    cursor: pointer;
+}
+
+.botao-seta {
+    cursor: pointer;
+    border-style: none;
+    background: none;
+}
+
+.modal-pai {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+    background-color: var(--azul-terciario);
+    border-radius: 1rem;
+    color: var(--branco-principal);
+    width: 35rem;
+    height: 30rem;
+    padding: 1.5rem;
+    margin: auto;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-fechar {
+    border-style: none;
+    background: none;
+
+    position: relative;
+    left: 48%;
+    
+    cursor: pointer;
+}

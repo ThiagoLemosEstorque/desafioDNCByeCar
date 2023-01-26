@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByeCar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="/assets/img/dnc-logo.png" alt="Logo DNC" width="70%">
+        <h1>ByeCar</h1>
+    </header>
+    <main>
+        <section>
+            <h2 class="titulo">Ter <b>uma moto</b> por assinatura nunca foi tão fácil!</h2>
+            <img class="imagens" src="/assets/img/left-img.png" alt="mulher em moto" width="70%">
+        </section>
+        <section>
+            <h2 class="titulo">Conheça nossas <span>motos</span>!</h2>
+            <div class="card-setas">
+                <button class="botao-seta" onclick="carousel(-1)">
+                    <img src="/assets/img/left-arrow.png">
+                </button>
+                <div class="card">
+                    <h3>Scooter Elétrica Voltz EV1</h3>
+                    <img src="/assets/img/img-card-1.png" width="60%">
+                    <div>
+                        <p>A partir de</p>
+                        <p id="preco">R$ 619,90</p>
+                        <h6>Plano de 30 meses</h6>
+                    </div>
+                </div>
+                <div class="card card-escondido">
+                    <h3>Honda CB 500X</h3>
+                    <img src="/assets/img/img-card-2.png" width="60%">
+                    <div>
+                        <p>A partir de</p>
+                        <p id="preco">R$ 619,90</p>
+                        <h6>Plano de 30 meses</h6>
+                    </div>
+                </div>
+                <button class="botao-seta" onclick="carousel(1)">
+                    <img src="/assets/img/right-arrow.png">
+                </button>
+            </div>
+            <button class="botao" onclick="trocarModal()">Saiba mais</button>
+            <script src="slide.js"></script>
+        </section>
+
+
+        <section>
+            <div class="modal-pai card-escondido">
+                <div class="modal">
+                    <button class="modal-fechar" onclick="trocarModal()">
+                        <img src="./assets/img/close-btn.png" alt="fechar" width="80%">
+                    </button>
+                    <h3>Scooter Elétrica Voltz EV1</h3>
+                    <p>O câmbio de 6 marchas da CB 500X oferece maior confiança e performance na pilotagem, tornando as
+                        subidas
+                        de marcha mais leves e as reduções mais suaves!</p>
+                    <img src="/assets/img/img-card-1.png" width="50%">
+                    <button class="modal-button">Quero Assinar!</button>
+                </div>
+            </div>
+            <div class="modal-pai card-escondido">
+                <div class="modal">
+                    <button class="modal-fechar" onclick="trocarModal()">
+                        <img src="./assets/img/close-btn.png" alt="fechar" width="80%">
+                    </button>
+                    <h3>Honda CB 500X</h3>
+                    <p>O câmbio de 6 marchas da CB 500X oferece maior confiança e performance na pilotagem, tornando as
+                        subidas
+                        de marcha mais leves e as reduções mais suaves!</p>
+                    <img src="/assets/img/img-card-2.png" width="50%">
+                    <button class="modal-button">Quero Assinar!</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
